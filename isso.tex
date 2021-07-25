@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{37474F}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Simran Kaur}
+\tagline{Technically sophisticated, business savvy Software Architect with over 7 years of experience in the Industry}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{American-passport-photo}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+    \email{simrank.adept@gmail.com}
+    \phone{+1778-788-5965}
+    \location{Ottawa, Canada}
+    \linkedin{linkedin.com/in/simran-kaur-khurana/}
+    \github{github.com/simrankadept/}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Work Experience}
+
+\cvevent{AWS Software Architect}{Vaisala}{Aug 2020 -- Present}{Vancouver, Canada}
+\begin{itemize}
+    \item Lead development team in designing AWS cloud based solutions. 
+    \item Provide last line of support for senior engineers in the team.
+    \item Design complete Solution Architecture based on business, operational and technical analysis.
+    \item Execution of agile software development practices and release management.
+    \item Driving the design and development of infrastructure that meets PCI, PII, and GXP compliance standards.
+    \item Design and development of AWS Codepipeline based CI/CD pipeline using AWS CDK in a continuous validated environment.
+    \item Develop cloud security standards and security audit trails for S3, Lambda, DynamoDB and API access in AWS.
+    \item Fine-tuning of Lambda functions and DynamoDB tables for scalability and cost optimizations.
+    \item AWS Route 53 configurations to ensure High-Availability and Disaster recovery in the infrastructure.
+    \item Configured various performance metrics using AWS Cloud watch and Cloud Trail.
+    \item Setting up infrastructure for data-breach detections and unauthorized entries in the system.
+    \item Ensuring SLA compliance through Cloudwatch synthetics and metric reporting in Grafana based on Cloudwatch logs and metrics.
+\end{itemize}
+\cvtag{AWS} 
+\cvtag{Lambda}
+\cvtag{DynamoDB}
+\cvtag{API Gateway}
+\cvtag{NodeJS}
+\cvtag{S3}
+\cvtag{SQS}
+\cvtag{SNS}
+\cvtag{Route 53}
+\cvtag{Cloudwatch}
+\cvtag{Grafana}
+\cvtag{GxP}
+\cvtag{CDK}
+\cvtag{Serverless framework}
+\cvtag{CodePipelie}
+\cvtag{CodeBuild}
+\cvtag{CodeDeploy}
+
+\vspace{10px}
+
+\cvevent{System Integration Engineer }{MetaOptima}{Aug 2019 - July 2020}{Vancouver, Canada}
+\begin{itemize}
+    \item Implement, translate and transform HL7 (Health Level 7) and FHIR (Fast Healthcare Interoperability messages) for interoperability and integration of web based system with various other PMS systems. 
+    \item Automation of various processes to facilitate faster turn around time for a wide array of migration systems and solutions.
+    \item Leverage integration engines ( such as MirthConnect, Iguana ) to develop extensive communication channels.
+\end{itemize}
+\cvtag{Python} 
+\cvtag{AWS}
+\cvtag{HL7}
+
+
+\vspace{10px}
+
+\cvevent{Senior Software Engineer }{Wingify}{Nov 2018 -- July 2019}{Delhi, India}
+\begin{itemize}
+    \item Development of high performance, highly available, real time applications.
+    \item Slashed server costs by up to 50\% by reducing database hits through integration of Kafka streams without an architectural overhaul of the application. 
+    \item Reduced application response time by parallelization of certain modules responsible for writing messages to Kafka.
+    \item Achieving zero data loss in real-time data streaming application. 
+\end{itemize}
+\cvtag{Kafka} 
+\cvtag{Java}
+\cvtag{Docker}
+
+\cvevent{ Software Development Engineer || }{StalkBuyLove}{Mar 2016 -- Nov 2018}{Delhi, India}
+\begin{itemize}
+    \item Big data infrastructure project - Focus on architecting for secure access and data performance.
+    \item Flagship consumer web site project (E-Commerce) - Focus on architecting for high availability, elasticity, and response times.
+    \item Technical architect and primary IC on the first-generation data-warehousing solution for the organization.
+    \item Continuous development and maintenance of Analytics platform (Code and infrastructure): High Traffic ingestion edge nodes, production DB clusters, standby and backup systems.
+    \item Install, administer and troubleshoot AWS EC2 cloud instances running multiple core daily/weekly/monthly ETL tasks.
+    \item Monitor data infrastructure and evaluate alternatives to ensure reliability and scalability of ETL framework and rapidly growing datasets.
+    \item Developing implementation plan for maintenance of the application and operation system with minimum downtime.
+\end{itemize}
+\cvtag{Big Data} 
+\cvtag{Hadoop}
+\cvtag{Data-warehouse}
+\cvtag{GoLang}
+\cvtag{E-Commerce}
+\cvtag{Scalability}
+\cvtag{Hive}
+
+\vspace{10px}
+
+\cvevent{ Software Development Engineer || }{Zuche Pharmaceuticals}{June 2015 -- Feb 2016}{Delhi, India}
+\begin{itemize}
+    \item Design and development of a Cloud-Based POS System for Pharmacies.
+    \item Integrating Offline Availability in the POS system.
+    \item Integrating Progressive Web Application features in POS system.
+\end{itemize}
+\cvtag{NodeJS} 
+\cvtag{MongoDB}
+\cvtag{AngularJS}
+
+\vspace{10px}
+
+\cvevent{ Interface Engineer || }{Knowtifi}{Jan 2014 -- Jun 2015 2019}{Delhi, India}
+\begin{itemize}
+    \item Developing scripts on an Integration Engine (Iguana) to translate and transform messages
+    \item Developing scripts in Lua language to transform HL7 messages.
+    \item Document interface implementation and configuration.
+    \item Monitoring data integrity in SQL databases.
+    \item Development of database schema and business logic for the health-care application.
+\end{itemize}
+\cvtag{HL7} 
+\cvtag{Iguana}
+\cvtag {Lua}
+
+
+\vspace{10px}
+%\cvevent{Aircraft Maintenance Engineering Internship }{Air %Algerie}{sep 2017 -- Jan 2018}{Algeria, Algiers}
+%\begin{itemize}
+ %   \item Establishment of a Peer-to-peer ATC communication %simulation.
+   % \item Troubleshooting and maintnance of a weather Radar .
+%\end{itemize}
+\cvsection{Education}
+
+\cvevent{B.Tech Computer Science}{GGSIPU}{Aug 2011 -- July 2015}{Delhi, India}
+
+\clearpage
+
+\end{document}
